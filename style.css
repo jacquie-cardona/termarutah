@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+header {
+    background: #141414;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.hero {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.button {
+    background: #00bcd4;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #0097a7;
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.footer {
+    background: #141414;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #222;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+}
