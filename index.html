@@ -17,24 +17,61 @@
     </nav>
 </header>
 
-<section class="hero">
-    <h1>Reliable Construction Material Delivery</h1>
-    <p>Serving Utah & Idaho with professional local and hotshot delivery services.</p>
-    <a href="https://forms.gle/ucFoGbuHhp8HFhUg6" target="_blank" class="button">Schedule a Delivery</a>
+<section class="hero-slider">
+    <div class="slides">
+        <img src="images/slide1.jpg" class="slide active" alt="Delivery 1">
+        <img src="images/slide2.jpg" class="slide" alt="Delivery 2">
+        <img src="images/slide3.jpg" class="slide" alt="Delivery 3">
+        <img src="images/slide4.jpg" class="slide" alt="Delivery 4">
+        <img src="images/slide5.jpg" class="slide" alt="Delivery 5">
+        <img src="images/slide6.jpg" class="slide" alt="Delivery 6">
+        <img src="images/slide7.jpg" class="slide" alt="Delivery 7">
+        <img src="images/slide8.jpg" class="slide" alt="Delivery 8">
+    </div>
+<button class="arrow left" onclick="prevSlide()">&#10094;</button>
+<button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    <div class="hero">
+        <img scr="assets/images/lgog-hero.png" alt="TerMar Utah">
+
+        <p>Professional local & hotshot construction material delivery across Utah & Idaho.</p>
+        <a href="https://forms.gle/ucFoGbuHhp8HFhUg6" target="_blank" class="button">Schedule a Delivery</a>
+    </div>
 </section>
 
 <section class="section">
-    <h2>Why Choose TerMar Utah?</h2>
+    <h2>About Us</h2>
     <p>
-        We specialize in transporting construction materials quickly, safely, and professionally. 
-        Whether you need local delivery or urgent hotshot service, we make sure your materials 
-        arrive on time so your project stays on schedule.
+       Founded by a husband and wife duo, TerMar Utah has grown into a strong team of professionals. Our journey began with a passion for seamless logistics and cutting-edge connectivity. Together, we’ve built a company that stands at the intersection of reliable transport and robust networking, dedicated to keeping your business moving and connected.
+
+At TerMar Utah, we’re more than a service; we are a family that extends beyond our doors, dedicated to your success while navigating the complexities of modern commerce with a personal touch.
     </p>
 </section>
 
 <footer class="footer">
     © 2026 TerMar Utah | Serving Utah & Idaho
 </footer>
+<script>
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 6000);
+</script>
 
 </body>
 </html>

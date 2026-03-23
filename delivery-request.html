@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delivery Request | TerMar</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>TerMar Delivery Request</h1>
+</header>
+
+<form id="deliveryForm">
+
+<h2>Contact</h2>
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+
+<h2>Pickup Details</h2>
+
+<input type="text" name="pickupBusiness" placeholder="Pickup Business">
+
+<input type="text" name="orderNumber" placeholder="Order Number">
+
+<textarea name="cargoDescription" placeholder="Cargo Description"></textarea>
+
+<label>Upload Order / Delivery Ticket</label>
+<input type="file" name="deliveryTicket">
+
+<h2>Delivery Details</h2>
+
+<input type="text" name="deliveryAddress" placeholder="Delivery Address">
+
+<select name="deliveryDay">
+
+<option>Same Day</option>
+<option>Monday</option>
+<option>Tuesday</option>
+<option>Wednesday</option>
+<option>Thursday</option>
+<option>Friday</option>
+
+</select>
+
+<label>Driver Unloading Required?</label>
+
+<select name="driverUnload">
+<option>No</option>
+<option>Yes</option>
+</select>
+
+<h2>Quote</h2>
+
+<select name="quoteRequired">
+<option>No</option>
+<option>Yes</option>
+</select>
+
+<textarea name="notes" placeholder="Other details"></textarea>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+<script src="js/form-handler.js"></script>
+
+</body>
+</html> 
